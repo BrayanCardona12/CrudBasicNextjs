@@ -7,9 +7,9 @@ function Layout({ children }) {
     return (
         <>
             <div className="bg-gray-200 h-screen">
-            <NavBar/>
+                <NavBar />
                 <div className="container mx-auto h-full p-10">
-                
+
                     {children}
 
                 </div>

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useRouter } from "next/router";
+
 import Layout from "components/Layout";
 import { ProductCard } from "components/productCard";
 
@@ -26,7 +26,7 @@ if (products.length === 0) return <h1 className="text-center text-2xl font-bold"
 
 export const getServerSideProps = async (context) => {
 
-  const res = await axios.get('http://localhost:3000/api/products')
+  const res = await axios.get('https://nextjscrud-e9tm3yztd-brayancardona12.vercel.app/api/products')
 
   return {
     props: {

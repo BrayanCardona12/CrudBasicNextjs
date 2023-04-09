@@ -8,7 +8,7 @@ function Layout({ children }) {
         <>
             <div className="bg-gray-200 h-screen">
                 <NavBar />
-                <div className="container mx-auto h-full p-10">
+                <div className="container mx-auto p-10">
 
                     {children}
 

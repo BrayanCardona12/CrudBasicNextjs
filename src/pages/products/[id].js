@@ -1,5 +1,6 @@
 import axios from "axios"
 import Layout from "components/Layout"
+import { ProductCard } from "components/productCard"
 import { useRouter } from 'next/router'
 import { toast } from "react-toastify"
 
@@ -17,9 +18,7 @@ function ProductView({ product }) {
 
     return (
         <Layout>
-            <h1>{product.name}</h1>
-            <p>{product.price}</p>
-            <p>{product.description}</p>
+            <ProductCard x={product}/>
 
 
             <button onClick={() => handlerDelete(product.id)} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete</button>

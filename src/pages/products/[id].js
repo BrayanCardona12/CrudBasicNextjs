@@ -32,7 +32,7 @@ function ProductView({ product }) {
 
 export const getServerSideProps = async (context) => {
 
-    const { data: product } = await axios.get(`https://nextjscrud-brayancardona12.vercel.app/api/products/${context.query.id}`)
+    const { data: product } = await axios.get(`https://crud-basic-nextjs2.vercel.app/api/products/${context.query.id}`)
 
 
     return {

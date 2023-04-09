@@ -26,7 +26,7 @@ if (products.length === 0) return <h1 className="text-center text-2xl font-bold"
 
 export const getServerSideProps = async (context) => {
 
-  const res = await axios.get('https://nextjscrud-e9tm3yztd-brayancardona12.vercel.app/api/products')
+  const res = await axios.get('https://crud-basic-nextjs2.vercel.app/api/products')
 
   return {
     props: {

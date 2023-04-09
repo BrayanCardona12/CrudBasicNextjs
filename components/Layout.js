@@ -6,9 +6,9 @@ import NavBar from './navBar';
 function Layout({ children }) {
     return (
         <>
-            <div class="bg-gray-200 h-screen">
+            <div className="bg-gray-200 h-screen">
             <NavBar/>
-                <div class="container mx-auto h-full p-10">
+                <div className="container mx-auto h-full p-10">
                 
                     {children}
 

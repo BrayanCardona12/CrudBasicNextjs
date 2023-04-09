@@ -1,8 +1,15 @@
-import React from 'react'
+import { FormProducts } from 'components/formProducts'
+import Layout from 'components/Layout'
+
 
 function newProducts() {
   return (
-    <div>Add a new newProducts</div>
+    <Layout>
+      <div className='grid place-items-center h-5/6'>
+      <FormProducts/>
+      </div>
+    </Layout>
+
   )
 }
 
